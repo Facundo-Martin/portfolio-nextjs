@@ -1,19 +1,18 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout from '../components/Layout/Layout';
 
-const Home: NextPage = () => {
+const Articles: NextPage = () => {
   return (
     <>
       <Head>
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <div className="text-6xl text-pink-200 font-semibold">Starting template</div>
+        <div className="text-6xl text-pink-200 font-semibold">Articles page</div>
       </Layout>
     </>
   );
 };
 
-export default Home;
+export default Articles;
