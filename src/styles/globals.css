@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .global-style {
+    @apply bg-white dark:bg-dark-bg text-light-text-primary dark:text-dark-text-primary;
+  }
+  .wrapper {
+    @apply max-w-screen-xl mx-auto px-10;
+  }
+}
+
 html,
 body {
   padding: 0;
