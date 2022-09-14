@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  #burger-menu {
+    @apply fixed transform top-[8vh] right-0 overflow-auto pt-2 w-full sm:w-1/2 shadow-lg h-[92vh] font-bold  bg-[#eeeef0] dark:bg-[#303339] dark:text-dark-text-primary border-t-[1px] border-[#dbdbdb] dark:border-[#727272]  ease-in-out transition-all duration-300 z-[1000];
+  }
   .global-style {
     @apply bg-white dark:bg-dark-bg text-light-text-primary dark:text-dark-text-primary;
   }
