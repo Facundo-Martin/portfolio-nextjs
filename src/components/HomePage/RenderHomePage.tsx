@@ -1,12 +1,12 @@
 import React from 'react';
-import HomeBanner from './HomeBanner';
 import HomeHero from './HomeHero';
+import HomeMain from './HomeMain';
 
 function RenderHomePage() {
   return (
     <>
-      <HomeBanner />
       <HomeHero />
+      <HomeMain />
     </>
   );
 }
