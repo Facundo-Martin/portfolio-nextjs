@@ -5,6 +5,7 @@ import ThemeChanger from './ThemeChanger';
 import NavItem from '../UI/NavItem';
 import Image from 'next/image';
 import { Sling as Hamburger } from 'hamburger-react';
+import MobileNavigation from './MobileNavigation';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,14 +29,15 @@ function Header() {
         </span>
         <div className="lg:hidden flex items-center gap-x-6">
           <ThemeChanger />
-          <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} />
+          <MobileNavigation />
+          {/* <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} />
           <div id="burger-menu" className={isOpen ? 'translate-x-0' : 'translate-x-full'}>
             <div className="w-full">
               {[1, 2, 3].map((navItem) => {
                 return <div>navItem</div>;
               })}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
