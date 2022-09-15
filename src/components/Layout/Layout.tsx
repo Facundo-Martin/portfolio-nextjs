@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <>
       <Header />
-      <main className="global-style">{props.children}</main>
+      <main className="wrapper py-14">{props.children}</main>
       <Footer />
     </>
   );
