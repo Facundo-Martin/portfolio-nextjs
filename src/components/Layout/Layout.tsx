@@ -1,5 +1,6 @@
-import React from "react";
-import Header from "./Header";
+import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
 type LayoutProps = {
   children?: JSX.Element;
@@ -10,7 +11,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
     <>
       <Header />
       <main className="global-style min-h-[80vh]">{props.children}</main>
-      <div>Footer</div>
+      <Footer />
     </>
   );
 };
