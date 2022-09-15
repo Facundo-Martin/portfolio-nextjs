@@ -14,7 +14,7 @@ function NavLink({ href, children }: NavLinkProps) {
 
 function Footer() {
   return (
-    <footer className="wrapper bg-blue-100">
+    <footer className="wrapper shadow-sm border-x border-neutral-200/50 bg-white dark:bg-zinc-800 dark:border-neutral-700/50">
       <div className="border-t border-zinc-100 py-10 dark:border-zinc-700/40">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
