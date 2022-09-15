@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import RenderHomePage from '../components/HomePage/RenderHomePage';
 import Layout from '../components/Layout/Layout';
 
 const Home: NextPage = () => {
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <div className="text-6xl text-pink-200 font-semibold">Starting template</div>
+        <RenderHomePage />
       </Layout>
     </>
   );
