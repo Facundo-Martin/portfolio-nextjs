@@ -1,10 +1,10 @@
 import { ArrowDownIcon, BriefcaseIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import React from 'react';
-import logoAirbnb from '@/images/logos/airbnb.svg';
-import logoFacebook from '@/images/logos/facebook.svg';
-import logoPlanetaria from '@/images/logos/planetaria.svg';
-import logoStarbucks from '@/images/logos/starbucks.svg';
+import logoAirbnb from '../../assets/logos/airbnb.svg';
+import logoFacebook from '../../assets/logos/facebook.svg';
+import logoPlanetaria from '../../assets/logos/planetaria.svg';
+import logoStarbucks from '../../assets/logos/starbucks.svg';
 
 function Newsletter() {
   return (
@@ -104,7 +104,6 @@ function Resume() {
 function HomeResume() {
   return (
     <div>
-      <h1>HomeResume</h1>
       <Resume />
       <Newsletter />
     </div>
