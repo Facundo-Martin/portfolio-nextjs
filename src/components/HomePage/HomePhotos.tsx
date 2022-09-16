@@ -1,20 +1,20 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import React from 'react';
-import image1 from './images/photos/image-1.jpg';
-import image2 from './images/photos/image-2.jpg';
-import image3 from './images/photos/image-3.jpg';
-import image4 from './images/photos/image-4.jpg';
-import image5 from './images/photos/image-5.jpg';
+import image1 from '../../assets/photos/image-1.jpg';
+import image2 from '../../assets/photos/image-2.jpg';
+import image3 from '../../assets/photos/image-3.jpg';
+import image4 from '../../assets/photos/image-4.jpg';
+import image5 from '../../assets/photos/image-5.jpg';
 
 const images = [image1, image2, image3, image4, image5];
 
 function HomePhotos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
+  const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <section className="pt-16 sm:pt-20 section">
+      <div className="-my-4 flex justify-center gap-5 overflow-visible py-4 sm:gap-8">
         {images.map((image, imageIndex) => (
           <div
             key={image.src}
@@ -27,7 +27,7 @@ function HomePhotos() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
