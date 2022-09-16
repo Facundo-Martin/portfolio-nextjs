@@ -12,6 +12,9 @@
   .wrapper {
     @apply max-w-screen-xl mx-auto px-10;
   }
+  .section {
+    @apply mx-auto py-16 px-4 sm:px-8 md:px-12 lg:px-24 border-x border-neutral-200/50 dark:border-neutral-700/50;
+  }
 }
 
 html,
