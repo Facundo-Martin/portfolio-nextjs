@@ -1,4 +1,4 @@
-function HomeMain() {
+function ProjectsHero() {
   return (
     <div className="relative h-auto pb-32 sm:pb-48 md:pb-56">
       <img src="https://cdn.devdojo.com/images/july2021/mesh-bg.jpg" className="absolute inset-0 object-cover w-full h-full" />
@@ -42,4 +42,4 @@ function HomeMain() {
   );
 }
 
-export default HomeMain;
+export default ProjectsHero;
