@@ -18,7 +18,7 @@ function SocialLink({ icon: Icon, ...props }: SocialLinkProps) {
 
 function HomeHero() {
   return (
-    <section className="section wrapper">
+    <section className="section pt-10 wrapper">
       <div className="w-14 h-14 rounded-full mb-4 bg-black">
         {/* <Image src="/vercel.svg" alt="Facundo Martin logo image" width={50} height={50} laoyut="responsive" /> */}
       </div>
