@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import RenderAbout from '../components/About/RenderAbout';
 import Layout from '../components/Layout/Layout';
 
 const About: NextPage = () => {
@@ -9,7 +10,7 @@ const About: NextPage = () => {
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <div className="text-6xl text-pink-200 font-semibold">About page</div>
+        <RenderAbout />
       </Layout>
     </>
   );
