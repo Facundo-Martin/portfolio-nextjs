@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../components/Layout/Layout';
+import RenderProjects from '../components/Projects/RenderProjects';
 
 const Projects: NextPage = () => {
   return (
@@ -9,7 +10,7 @@ const Projects: NextPage = () => {
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <div className="text-6xl text-pink-200 font-semibold">Projects page</div>
+        <RenderProjects />
       </Layout>
     </>
   );
