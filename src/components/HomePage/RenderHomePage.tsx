@@ -9,7 +9,7 @@ function RenderHomePage() {
     <>
       <HomeHero />
       <HomePhotos />
-      <section className="flex flex-col items-center gap-y-10 lg:gap-y-0 lg:flex-row lg:items-start justify-between section">
+      <section className="flex flex-col items-center gap-y-10 lg:gap-y-0 lg:flex-row lg:items-start gap-x-10 justify-between section">
         <TechStack />
         <HomeResume />
       </section>

@@ -11,6 +11,7 @@ const logos = {
   nextjs: require('./nextjs.svg'),
   reactjs: require('./reactjs.png'),
   spume: require('./spume.png'),
+  tailwind: require('./tailwind.png'),
   theodinproject: require('./theodinproject.png'),
   typescript: require('./typescript.svg'),
   vscode: require('./vscode.png'),
