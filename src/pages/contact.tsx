@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import RenderContact from '../components/Contact/RenderContact';
 import Layout from '../components/Layout/Layout';
 
 const Contact: NextPage = () => {
@@ -9,7 +10,7 @@ const Contact: NextPage = () => {
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <div className="text-6xl text-pink-200 font-semibold">Contact page</div>
+        <RenderContact />
       </Layout>
     </>
   );
