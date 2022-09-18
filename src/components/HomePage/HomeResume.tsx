@@ -1,37 +1,25 @@
-import {
-  ArrowDownIcon,
-  BriefcaseIcon,
-  CodeBracketIcon,
-  DevicePhoneMobileIcon,
-  EnvelopeIcon,
-  FolderOpenIcon,
-  HomeIcon,
-  InboxIcon,
-  InformationCircleIcon,
-  LinkIcon,
-  ListBulletIcon,
-  MagnifyingGlassIcon,
-  MapIcon,
-  PaperAirplaneIcon,
-  PhoneIcon,
-  RssIcon,
-  Square3Stack3DIcon,
-  UserCircleIcon,
-} from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import React from 'react';
+import Link from 'next/link';
+import clsx from 'clsx';
+// Components
+import { Button } from '../UI/Button';
+// Local files
 import culturalcare from '../../assets/logos/culturalcare.png';
 import spume from '../../assets/logos/spume.png';
 import theodinproject from '../../assets/logos/theodinproject.png';
-import logoAirbnb from '../../assets/logos/airbnb.svg';
-import logoFacebook from '../../assets/logos/facebook.svg';
-import logoPlanetaria from '../../assets/logos/planetaria.svg';
-import { Button } from '../UI/Button';
-import Link from 'next/link';
-import clsx from 'clsx';
-import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
-import testimg from '../../assets/testimg.jpg';
 import FacundoMartin from '../../assets/FacundoMartin.pdf';
+// Icons
+import {
+  ArrowDownIcon,
+  BriefcaseIcon,
+  EnvelopeIcon,
+  HomeIcon,
+  InboxIcon,
+  InformationCircleIcon,
+  MapIcon,
+  PhoneIcon,
+  Square3Stack3DIcon,
+} from '@heroicons/react/24/outline';
 
 type NavLinkProps = {
   children: React.ReactNode;
