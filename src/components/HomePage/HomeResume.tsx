@@ -60,16 +60,16 @@ function HomeNav() {
       </h2>
       <ul role="list">
         <nav className="pl-6 pt-1">
-          <NavLink href="#" icon={HomeIcon} className="mt-4">
+          <NavLink href="/" icon={HomeIcon} className="mt-4">
             Home
           </NavLink>
-          <NavLink href="#" icon={Square3Stack3DIcon} className="mt-4">
+          <NavLink href="/projects" icon={Square3Stack3DIcon} className="mt-4">
             Projects
           </NavLink>
-          <NavLink href="#" icon={InformationCircleIcon} className="mt-4">
+          <NavLink href="/about" icon={InformationCircleIcon} className="mt-4">
             About
           </NavLink>
-          <NavLink href="#" icon={InboxIcon} className="mt-4">
+          <NavLink href="/contact" icon={InboxIcon} className="mt-4">
             Contact
           </NavLink>
         </nav>
