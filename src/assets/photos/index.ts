@@ -4,7 +4,7 @@ const photos = {
   image3: require('./image3.jpg'),
   image4: require('./image4.jpg'),
   image5: require('./image5.jpg'),
-  headshot: require('./headshot.jpg'),
+  headshot: require('./headshot.png'),
 };
 
 export default photos;

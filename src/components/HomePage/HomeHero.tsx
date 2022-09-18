@@ -20,8 +20,8 @@ function SocialLink({ icon: Icon, ...props }: SocialLinkProps) {
 function HomeHero() {
   return (
     <section className="section pt-10 wrapper">
-      <div className="w-14 h-14 rounded-full mb-4 bg-black">
-        <Image src={photos.headshot} alt="Facundo Martin logo image" width={50} height={50} layout="responsive" />
+      <div className="w-16 h-16 rounded-full mb-4 bg-black hover:scale-110 transform transition ease-in-out duration-700">
+        <Image src={photos.headshot} alt="Facundo Martin logo image" width={50} height={50} layout="responsive" className="rounded-full" />
       </div>
       <div className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">React developer.</h1>
