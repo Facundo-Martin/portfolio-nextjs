@@ -73,11 +73,11 @@ function HomeNav() {
             Contact
           </NavLink>
         </nav>
-        <NavLink href="mailto:spencer@planetaria.tech" icon={EnvelopeIcon} className="mt-6 border-t border-zinc-200 pt-5 dark:border-zinc-600/50">
-          spencer@planetaria.tech
+        <NavLink href="mailto:facundomartin98@gmail.com" icon={EnvelopeIcon} className="mt-6 border-t border-zinc-200 pt-5 dark:border-zinc-600/50">
+          facundomartin98@gmail.com
         </NavLink>
-        <NavLink href="#" icon={PhoneIcon} className="mt-4">
-          (301) 204 - 5467
+        <NavLink href="tel:+1-279-977-5880" icon={PhoneIcon} className="mt-4">
+          (279) 977 - 5880
         </NavLink>
       </ul>
     </div>
