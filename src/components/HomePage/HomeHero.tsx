@@ -1,19 +1,16 @@
 import Image from 'next/image';
-import Link, { LinkProps } from 'next/link';
 import React from 'react';
 import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
 import photos from '../../assets/photos/index';
 
-export interface SocialLinkProps extends LinkProps {
+export interface SocialLinkProps extends React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {
   icon: React.ElementType;
 }
 function SocialLink({ icon: Icon, ...props }: SocialLinkProps) {
   return (
-    <Link {...props}>
-      <a className="group -m-1 p-1 cursor-pointer">
-        <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-800 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-      </a>
-    </Link>
+    <a className="group -m-1 p-1 cursor-pointer" {...props}>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-800 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    </a>
   );
 }
 
@@ -34,8 +31,8 @@ function HomeHero() {
         <div className="mt-6 flex gap-6">
           <SocialLink href="#" aria-label="Follow on Twitter" icon={TwitterIcon} />
           <SocialLink href="#" aria-label="Follow on Instagram" icon={InstagramIcon} />
-          <SocialLink href="https://github.com" aria-label="Follow on GitHub" icon={GitHubIcon} />
-          <SocialLink href="https://linkedin.com" aria-label="Follow on LinkedIn" icon={LinkedInIcon} />
+          <SocialLink href="https://github.com/Facundo-Martin" aria-label="Follow on GitHub" target="_blank" icon={GitHubIcon} />
+          <SocialLink href="https://www.linkedin.com/in/facundo-martin-88637422b/" aria-label="Follow on LinkedIn" target="_blank" icon={LinkedInIcon} />
         </div>
       </div>
     </section>
