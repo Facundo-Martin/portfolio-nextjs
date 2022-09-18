@@ -1,36 +1,75 @@
-import { ArrowDownIcon, BriefcaseIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import React from 'react';
+import Link from 'next/link';
+import clsx from 'clsx';
+// Components
+import { Button } from '../UI/Button';
+// Local files
 import culturalcare from '../../assets/logos/culturalcare.png';
 import spume from '../../assets/logos/spume.png';
 import theodinproject from '../../assets/logos/theodinproject.png';
-import logoAirbnb from '../../assets/logos/airbnb.svg';
-import logoFacebook from '../../assets/logos/facebook.svg';
-import logoPlanetaria from '../../assets/logos/planetaria.svg';
-import logoStarbucks from '../../assets/logos/starbucks.svg';
-import { Button } from '../UI/Button';
+import FacundoMartin from '../../assets/FacundoMartin.pdf';
+// Icons
+import {
+  ArrowDownIcon,
+  BriefcaseIcon,
+  EnvelopeIcon,
+  HomeIcon,
+  InboxIcon,
+  InformationCircleIcon,
+  MapIcon,
+  PhoneIcon,
+  Square3Stack3DIcon,
+} from '@heroicons/react/24/outline';
 
-function Newsletter() {
+type NavLinkProps = {
+  children: React.ReactNode;
+  className?: string;
+  href: string;
+  icon: React.ElementType;
+};
+function NavLink({ className, href, children, icon: Icon }: NavLinkProps) {
   return (
-    <form action="/thank-you" className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MagnifyingGlassIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
+    <li className={clsx(className, 'flex')}>
+      <Link href={href}>
+        <a className="group flex gap-x-3 text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+          <Icon className="h-6 w-6 flex-none text-zinc-500 transition group-hover:text-teal-500" />
+          <span>{children}</span>
+        </a>
+      </Link>
+    </li>
+  );
+}
+
+function HomeNav() {
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-sm">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 pb-4 border-b border-zinc-200 dark:border-zinc-600/50">
+        <MapIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Navigation</span>
       </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get notified when I publish something new, and unsubscribe at any time.</p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
+      <ul role="list">
+        <nav className="pl-6 pt-1">
+          <NavLink href="/" icon={HomeIcon} className="mt-4">
+            Home
+          </NavLink>
+          <NavLink href="/projects" icon={Square3Stack3DIcon} className="mt-4">
+            Projects
+          </NavLink>
+          <NavLink href="/about" icon={InformationCircleIcon} className="mt-4">
+            About
+          </NavLink>
+          <NavLink href="/contact" icon={InboxIcon} className="mt-4">
+            Contact
+          </NavLink>
+        </nav>
+        <NavLink href="mailto:facundomartin98@gmail.com" icon={EnvelopeIcon} className="mt-6 border-t border-zinc-200 pt-5 dark:border-zinc-600/50">
+          facundomartin98@gmail.com
+        </NavLink>
+        <NavLink href="tel:+1-279-977-5880" icon={PhoneIcon} className="mt-4">
+          (279) 977 - 5880
+        </NavLink>
+      </ul>
+    </div>
   );
 }
 
@@ -99,7 +138,8 @@ function Resume() {
         ))}
       </ol>
       <Button className="group mt-6 w-full">
-        <a className="flex items-center gap-2">
+        <a download href={FacundoMartin} className="flex items-center gap-2">
+          {/* <a download href="#" className="flex items-center gap-2"> */}
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />
         </a>
@@ -111,7 +151,7 @@ function HomeResume() {
   return (
     <div className="space-y-8">
       <Resume />
-      <Newsletter />
+      <HomeNav />
     </div>
   );
 }
