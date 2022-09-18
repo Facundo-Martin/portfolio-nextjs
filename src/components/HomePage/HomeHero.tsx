@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link, { LinkProps } from 'next/link';
 import React from 'react';
 import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
+import photos from '../../assets/photos/index';
 
 export interface SocialLinkProps extends LinkProps {
   icon: React.ElementType;
@@ -20,7 +21,7 @@ function HomeHero() {
   return (
     <section className="section pt-10 wrapper">
       <div className="w-14 h-14 rounded-full mb-4 bg-black">
-        {/* <Image src="/vercel.svg" alt="Facundo Martin logo image" width={50} height={50} laoyut="responsive" /> */}
+        <Image src={photos.headshot} alt="Facundo Martin logo image" width={50} height={50} layout="responsive" />
       </div>
       <div className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">React developer.</h1>
