@@ -26,11 +26,12 @@ import theodinproject from '../../assets/logos/theodinproject.png';
 import logoAirbnb from '../../assets/logos/airbnb.svg';
 import logoFacebook from '../../assets/logos/facebook.svg';
 import logoPlanetaria from '../../assets/logos/planetaria.svg';
-import logoStarbucks from '../../assets/logos/starbucks.svg';
 import { Button } from '../UI/Button';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
+import testimg from '../../assets/testimg.jpg';
+import FacundoMartin from '../../assets/FacundoMartin.pdf';
 
 type NavLinkProps = {
   children: React.ReactNode;
@@ -149,7 +150,8 @@ function Resume() {
         ))}
       </ol>
       <Button className="group mt-6 w-full">
-        <a className="flex items-center gap-2">
+        <a download href={FacundoMartin} className="flex items-center gap-2">
+          {/* <a download href="#" className="flex items-center gap-2"> */}
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />
         </a>
