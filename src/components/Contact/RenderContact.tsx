@@ -4,10 +4,10 @@ import ContactMain from './ContactMain';
 
 function RenderContact() {
   return (
-    <div>
+    <>
       <ContactHero />
       <ContactMain />
-    </div>
+    </>
   );
 }
 
