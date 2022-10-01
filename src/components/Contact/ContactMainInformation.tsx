@@ -89,7 +89,10 @@ export default function ContactMainInformation() {
           <span className="sr-only">Email</span>
         </dt>
         <dd>
-          <a href="mailto:facundomartin98@gmail.com" className="flex gap-x-3 text-base text-teal-50 group">
+          <a
+            href="mailto:facundomartin98@gmail.com?subject=React Developer Position&body=Hi Facundo, I'm (name) and I work at (company) as a (position). We are currently looking for a React Developer who is well versed in (skills). After seeing your portfolio and work experience, we believe you are a strong candidate for this position. Please contact us at (contact info)"
+            className="flex gap-x-3 text-base text-teal-50 group"
+          >
             <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-teal-200 group-hover:hidden" aria-hidden="true" />
             <SolidEnvelopeIcon className="h-6 w-6 flex-shrink-0 text-slate-50 hidden group-hover:block" aria-hidden="true" />
             <span>facundomartin98@gmail.com</span>
