@@ -1,27 +1,26 @@
-import Image from 'next/future/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import clsx from 'clsx';
-
+import FacundoDevCard from '../../assets/mydevcard.png';
 import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
-// import portraitImage from '@/images/portrait.jpg';
 import { SVGProps } from 'react';
+import Image from 'next/image';
 
 type SocialLinkProps = {
   children: React.ReactNode;
   className?: string;
-  href: string;
+  href?: string;
   icon: React.ElementType;
 };
 function SocialLink({ className, href, children, icon: Icon }: SocialLinkProps) {
   return (
     <li className={clsx(className, 'flex')}>
-      <Link href={href}>
-        <a className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+      <a href={href} target="_blank" rel="noreferrer">
+        <div className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
           <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
           <span className="ml-4">{children}</span>
-        </a>
-      </Link>
+        </div>
+      </a>
     </li>
   );
 }
@@ -47,13 +46,8 @@ export default function RenderAbout() {
       <div className="section">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-none">
-              {/* <Image
-                src={portraitImage}
-                alt=""
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-              /> */}
+            <div className="max-w-xs px-2.5 lg:max-w-sm ">
+              <Image src={FacundoDevCard} alt="" height={480} width={340} />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
@@ -83,16 +77,16 @@ export default function RenderAbout() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink icon={TwitterIcon} aria-label="Follow on Twitter">
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink icon={InstagramIcon} aria-label="Follow on Instagram" className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/Facundo-Martin" icon={GitHubIcon} aria-label="Follow on Github" className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/facundo-martin-88637422b/" aria-label="Follow on LinkedIn" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink href="mailto:spencer@planetaria.tech" icon={MailIcon} className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
