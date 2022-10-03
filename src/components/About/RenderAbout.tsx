@@ -5,7 +5,18 @@ import FacundoDevCard from '../../assets/mydevcard.png';
 import { TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon } from '../UI/SocialIcons';
 import { SVGProps } from 'react';
 import Image from 'next/image';
+import Deadpool from '../../assets/Deadpool.gif';
 
+function MaximumEffort() {
+  return (
+    <span className="group relative">
+      <span className="underline underline-offset-2">maximum effort.</span>
+      <div className="hidden group-hover:block absolute -top-40 w-[28rem] ">
+        <Image src={Deadpool} width={800} height={800} layout="responsive" />
+      </div>
+    </span>
+  );
+}
 type SocialLinkProps = {
   children: React.ReactNode;
   className?: string;
@@ -47,22 +58,22 @@ export default function RenderAbout() {
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-sm ">
-              <Image src={FacundoDevCard} alt="" height={480} width={340} />
+              <Image src={FacundoDevCard} alt="Facundo Martin dev card" height={480} width={340} />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the future.
+              I’m Facundo Martin. I live in California, but also in my own world.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and wrote my first program when I was 6 years old, just two weeks after my mom brought
-                home the brand new Macintosh LC 550 that I taught myself to type on.
+                I never thought I'd end up as as Software Developer, but since I'm already here I might as well do it to the best of my ability. So I'm gonna do
+                this the old-fashioned way, with two swords and with <MaximumEffort />
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space. When I was 8, I climbed the 40-foot oak tree at the back of our yard while
-                wearing my older sister’s motorcycle helmet, counted down from three, and jumped — hoping the tree was tall enough that with just a bit of
-                momentum I’d be able to get to orbit.
+                I enjoy working at startup environments, where things are fast-paced and we need to figure things out as a team. I like the level of{' '}
+                <span className="underline">innovation</span> and <span className="underline">collaboration</span> that startups bring to the table, as well as
+                the opportunity to take more responsibility and ownership for my code.
               </p>
               <p>
                 I spent the next few summers indoors working on a rocket design, while I recovered from the multiple surgeries it took to fix my badly broken
