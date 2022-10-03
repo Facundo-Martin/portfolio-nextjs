@@ -29,7 +29,7 @@ type NavLinkProps = {
 };
 function NavLink({ className, href, children, icon: Icon }: NavLinkProps) {
   return (
-    <li className={clsx(className, 'flex')}>
+    <li className={className}>
       <Link href={href}>
         <a className="group flex gap-x-3 text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
           <Icon className="h-6 w-6 flex-none text-zinc-500 transition group-hover:text-teal-500" />
