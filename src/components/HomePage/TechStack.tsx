@@ -46,7 +46,7 @@ function TechStack() {
   const styles = {
     wrapper: 'border-b pb-6 border-zinc-200 dark:border-zinc-600/50 group',
     title: 'mb-3 font-medium text-zinc-700 dark:text-zinc-200',
-    grid: 'max-w-md grid grid-cols-2 md:grid-cols-4 md:gap-x-6 gap-y-6 pt-3',
+    grid: 'max-w-md grid grid-cols-4 md:gap-x-6 gap-y-6 pt-3',
   };
   return (
     <div className="flex-1 space-y-6  max-w-xl rounded-xl px-6 py-5 border  border-neutral-100 dark:border-neutral-700/40 shadow-sm">

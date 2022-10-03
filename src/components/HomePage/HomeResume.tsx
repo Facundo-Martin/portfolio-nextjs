@@ -7,7 +7,7 @@ import { Button } from '../UI/Button';
 import culturalcare from '../../assets/logos/culturalcare.png';
 import spume from '../../assets/logos/spume.png';
 import theodinproject from '../../assets/logos/theodinproject.png';
-import FacundoMartin from '../../assets/FacundoMartin.pdf';
+// import FacundoMartin from '../../assets/FacundoMartin.pdf';
 // Icons
 import {
   ArrowDownIcon,
@@ -29,7 +29,7 @@ type NavLinkProps = {
 };
 function NavLink({ className, href, children, icon: Icon }: NavLinkProps) {
   return (
-    <li className={clsx(className, 'flex')}>
+    <li className={className}>
       <Link href={href}>
         <a className="group flex gap-x-3 text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
           <Icon className="h-6 w-6 flex-none text-zinc-500 transition group-hover:text-teal-500" />
@@ -138,7 +138,8 @@ function Resume() {
         ))}
       </ol>
       <Button className="group mt-6 w-full">
-        <a download href={FacundoMartin} className="flex items-center gap-2">
+        {/* <a download href={FacundoMartin} className="flex items-center gap-2"> */}
+        <a className="flex items-center gap-2">
           {/* <a download href="#" className="flex items-center gap-2"> */}
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />
