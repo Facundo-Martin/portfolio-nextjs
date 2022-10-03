@@ -76,13 +76,17 @@ export default function RenderAbout() {
                 the opportunity to take more responsibility and ownership for my code.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design, while I recovered from the multiple surgeries it took to fix my badly broken
-                legs. It took nine iterations, but when I was 15 I sent my dad’s Blackberry into orbit and was able to transmit a photo back down to our family
-                computer from space.
+                I pend most of my time coding, learning new technologies, and trying to write cleaner code. Seriously, I'm that boring. When I'm not coding I'm
+                either at the gym or contemplating my mere molecular existence in this vast nonsense universe.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on civilian space suits and manned shuttle kits you can assemble at home so that the
-                next generation of kids really <em>can</em> make it to orbit — from the comfort of their own backyards.
+                Today, I’m mostly focused on honing my skills as a React Developer.
+                <br />
+                Tomorrow, I'd like to be able to lead a team and teach people the things I wish I had learned faster or better.
+              </p>
+              <p>
+                Maybe I'll even teach my parents how to code. They are still learning how to change the source mode on the TV though. <br /> So maybe once they
+                figure that out (2-5 years) we can move on to some HTML & CSS.
               </p>
             </div>
           </div>
