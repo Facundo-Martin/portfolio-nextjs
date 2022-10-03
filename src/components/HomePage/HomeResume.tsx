@@ -7,7 +7,7 @@ import { Button } from '../UI/Button';
 import culturalcare from '../../assets/logos/culturalcare.png';
 import spume from '../../assets/logos/spume.png';
 import theodinproject from '../../assets/logos/theodinproject.png';
-import FacundoMartin from '../../assets/FacundoMartin.pdf';
+// import FacundoMartin from '../../assets/FacundoMartin.pdf';
 // Icons
 import {
   ArrowDownIcon,
@@ -138,7 +138,8 @@ function Resume() {
         ))}
       </ol>
       <Button className="group mt-6 w-full">
-        <a download href={FacundoMartin} className="flex items-center gap-2">
+        {/* <a download href={FacundoMartin} className="flex items-center gap-2"> */}
+        <a className="flex items-center gap-2">
           {/* <a download href="#" className="flex items-center gap-2"> */}
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />
