@@ -1,8 +1,15 @@
 import React from 'react';
 import { Project } from '../../d';
+import ProjectHero from './ProjectHero';
+import ProjectMain from './ProjectMain';
 
 function RenderProject({ project }: { project: Project }) {
-  return <div>{project.name}</div>;
+  return (
+    <>
+      <ProjectHero />
+      <ProjectMain />
+    </>
+  );
 }
 
 export default RenderProject;
