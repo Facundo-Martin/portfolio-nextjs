@@ -6,8 +6,8 @@ import ProjectMain from './ProjectMain';
 function RenderProject({ project }: { project: Project }) {
   return (
     <>
-      <ProjectHero />
-      <ProjectMain />
+      <ProjectHero project={project} />
+      <ProjectMain project={project} />
     </>
   );
 }

@@ -2,6 +2,8 @@ import { StaticImageData } from 'next/image';
 
 export type Project = {
   name: string;
+  preview: StaticImageData;
+  url: string;
   description: string;
   techStack: string[];
   slug: string;
