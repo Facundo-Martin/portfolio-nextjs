@@ -7,7 +7,6 @@ function RenderProjects() {
     <div className="pt-10">
       <ProjectsHero />
       <ProjectsMain />
-      <ProjectsHero />
     </div>
   );
 }

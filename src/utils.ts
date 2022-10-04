@@ -30,4 +30,26 @@ export const resume: ResumeItem[] = [
     end: 2022,
   },
 ];
-export const projects: Project[] = [{ name: 'My Project' }, { name: 'Another Project' }];
+export const projects: Project[] = [
+  {
+    name: 'Spume App',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
+    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
+    slug: 'spume-app',
+  },
+  {
+    name: 'Spume App',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
+    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
+    slug: 'spume-app',
+  },
+  {
+    name: 'Spume App',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
+    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
+    slug: 'spume-app',
+  },
+];

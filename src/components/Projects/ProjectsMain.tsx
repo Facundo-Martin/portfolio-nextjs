@@ -5,8 +5,8 @@ import ProjectCard from './ProjectCard';
 function ProjectsMain() {
   return (
     <section className="section">
-      <h1 className="text-4xl font-bold text-center">My Projects</h1>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <h1 className="text-4xl font-bold text-center mb-14">My Projects</h1>
+      <div className="grid place-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
         {projects.map((project) => (
           <ProjectCard project={project} />
         ))}
