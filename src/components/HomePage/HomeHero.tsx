@@ -16,7 +16,7 @@ function SocialLink({ icon: Icon, ...props }: SocialLinkProps) {
 function HomeHero() {
   return (
     <section className="section pt-10 wrapper">
-      <Headshot width={16} />
+      <Headshot width={20} />
       <div className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">React developer.</h1>
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">NextJS enthusiast.</h1>
