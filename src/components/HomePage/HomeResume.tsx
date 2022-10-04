@@ -3,23 +3,12 @@ import Link from 'next/link';
 import clsx from 'clsx';
 // Components
 import { Button } from '../UI/Button';
-// Local files
-import culturalcare from '../../assets/logos/culturalcare.png';
-import spume from '../../assets/logos/spume.png';
-import theodinproject from '../../assets/logos/theodinproject.png';
+
 // import FacundoMartin from '../../assets/FacundoMartin.pdf';
 // Icons
-import {
-  ArrowDownIcon,
-  BriefcaseIcon,
-  EnvelopeIcon,
-  HomeIcon,
-  InboxIcon,
-  InformationCircleIcon,
-  MapIcon,
-  PhoneIcon,
-  Square3Stack3DIcon,
-} from '@heroicons/react/24/outline';
+import { ArrowDownIcon, BriefcaseIcon, EnvelopeIcon, HomeIcon, InboxIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, MapIcon, PhoneIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
+import { resume } from '../../utils';
 
 type NavLinkProps = {
   children: React.ReactNode;
@@ -74,36 +63,6 @@ function HomeNav() {
 }
 
 function Resume() {
-  const resume: any[] = [
-    {
-      company: 'Spume',
-      url: 'https://spume.io/',
-      title: 'React Developer',
-      logo: spume,
-      start: '2022',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'Frontend Development',
-      title: 'The Odin Project | Self-taught',
-      url: 'https://www.theodinproject.com/',
-      logo: theodinproject,
-      start: '2021',
-      end: '2022',
-    },
-    {
-      company: 'Cultural Care',
-      url: 'https://culturalcare.com/',
-      title: 'Au Pair',
-      logo: culturalcare,
-      start: '2020',
-      end: '2022',
-    },
-  ];
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-sm">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -126,12 +85,10 @@ function Resume() {
               <dt className="sr-only">Role</dt>
               <dd className="text-xs text-zinc-500 dark:text-zinc-400">{role.title}</dd>
               <dt className="sr-only">Date</dt>
-              <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end}`}
-              >
-                <time dateTime={role.start.dateTime ?? role.start}>{role.start.label ?? role.start}</time> <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>{role.end.label ?? role.end}</time>
+              <dd className="ml-auto {text-xs text-zinc-400 dark:text-zinc-500">
+                <span className="text-sm">
+                  {role.start} - {role.end}
+                </span>
               </dd>
             </dl>
           </li>

@@ -1,10 +1,12 @@
 import React from 'react';
 import ProjectsHero from './ProjectsHero';
+import ProjectsMain from './ProjectsMain';
 
 function RenderProjects() {
   return (
-    <div>
+    <div className="pt-10">
       <ProjectsHero />
+      <ProjectsMain />
     </div>
   );
 }
