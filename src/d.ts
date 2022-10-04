@@ -9,6 +9,6 @@ export type ResumeItem = {
   url: string;
   title: string;
   logo: StaticImageData;
-  start: string;
-  end: string | { label: string; dateTime: number };
+  start: number | string;
+  end: number | string;
 };

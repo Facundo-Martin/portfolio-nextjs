@@ -85,12 +85,10 @@ function Resume() {
               <dt className="sr-only">Role</dt>
               <dd className="text-xs text-zinc-500 dark:text-zinc-400">{role.title}</dd>
               <dt className="sr-only">Date</dt>
-              <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end}`}
-              >
-                <time dateTime={role.start.dateTime ?? role.start}>{role.start.label ?? role.start}</time> <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>{role.end.label ?? role.end}</time>
+              <dd className="ml-auto {text-xs text-zinc-400 dark:text-zinc-500">
+                <span className="text-sm">
+                  {role.start} - {role.end}
+                </span>
               </dd>
             </dl>
           </li>
