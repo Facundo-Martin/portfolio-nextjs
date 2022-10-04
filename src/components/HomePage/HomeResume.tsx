@@ -9,17 +9,8 @@ import spume from '../../assets/logos/spume.png';
 import theodinproject from '../../assets/logos/theodinproject.png';
 // import FacundoMartin from '../../assets/FacundoMartin.pdf';
 // Icons
-import {
-  ArrowDownIcon,
-  BriefcaseIcon,
-  EnvelopeIcon,
-  HomeIcon,
-  InboxIcon,
-  InformationCircleIcon,
-  MapIcon,
-  PhoneIcon,
-  Square3Stack3DIcon,
-} from '@heroicons/react/24/outline';
+import { ArrowDownIcon, BriefcaseIcon, EnvelopeIcon, HomeIcon, InboxIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, MapIcon, PhoneIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
 
 type NavLinkProps = {
   children: React.ReactNode;
