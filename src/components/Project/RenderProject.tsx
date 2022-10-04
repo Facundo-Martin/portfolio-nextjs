@@ -6,7 +6,7 @@ import ProjectMain from './ProjectMain';
 function RenderProject({ project }: { project: Project }) {
   return (
     <>
-      <ProjectHero project={project} />
+      <ProjectHero title={project.name} />
       <ProjectMain project={project} />
     </>
   );
