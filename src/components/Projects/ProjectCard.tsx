@@ -27,7 +27,11 @@ type ProjectCardProps = {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="space-y-2 pb-3">
-      <Image src={project.preview} width={300} height={250} className="rounded-lg" />
+      <Link href={`/projects/${project.slug}`}>
+        <a>
+          <Image src={project.preview} width={300} height={250} className="rounded-lg" />
+        </a>
+      </Link>
 
       <h5 className="font-semibold">{project.name}</h5>
       <p className="py-1">{project.description}</p>
