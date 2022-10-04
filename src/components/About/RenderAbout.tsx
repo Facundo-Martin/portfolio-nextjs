@@ -57,7 +57,7 @@ export default function RenderAbout() {
       <div className="section">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-sm ">
+            <div className="max-w-xs px-2.5 lg:max-w-sm">
               <Image src={FacundoDevCard} alt="Facundo Martin dev card" height={480} width={340} />
             </div>
           </div>
@@ -76,8 +76,8 @@ export default function RenderAbout() {
                 the opportunity to take more responsibility and ownership for my code.
               </p>
               <p>
-                I pend most of my time coding, learning new technologies, and trying to write cleaner code. Seriously, I'm that boring. When I'm not coding I'm
-                either at the gym or contemplating my mere molecular existence in this vast nonsense universe.
+                I spend most of my time coding, learning new technologies, and trying to write cleaner code. Seriously, I'm that boring. When I'm not coding I'm
+                either at the gym or contemplating my molecular existence in this vast and non-sensical universe.
               </p>
               <p>
                 Today, I’m mostly focused on honing my skills as a React Developer.
@@ -86,7 +86,7 @@ export default function RenderAbout() {
               </p>
               <p>
                 Maybe I'll even teach my parents how to code. They are still learning how to change the source mode on the TV though. <br /> So maybe once they
-                figure that out (2-5 years) we can move on to some HTML & CSS.
+                figure that one out (2-5 years) we can move on to some HTML & CSS.
               </p>
             </div>
           </div>
@@ -103,9 +103,6 @@ export default function RenderAbout() {
               </SocialLink>
               <SocialLink href="https://www.linkedin.com/in/facundo-martin-88637422b/" aria-label="Follow on LinkedIn" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
-              </SocialLink>
-              <SocialLink href="mailto:spencer@planetaria.tech" icon={MailIcon} className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
-                spencer@planetaria.tech
               </SocialLink>
             </ul>
           </div>
