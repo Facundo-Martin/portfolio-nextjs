@@ -37,7 +37,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <p className="py-2">{project.description}</p>
       <div className="flex items-center gap-x-1">
         {project.techStack.map((tech, i) => (
-          <div className="text-sky-400">
+          <div className="text-sky-500">
             {tech} {i < project.techStack.length - 1 && '-'}
           </div>
         ))}
