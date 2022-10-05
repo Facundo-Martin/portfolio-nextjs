@@ -7,6 +7,8 @@ export type Project = {
   description: string;
   techStack: string[];
   slug: string;
+  website: string;
+  github?: string;
 };
 
 export type ResumeItem = {

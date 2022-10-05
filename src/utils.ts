@@ -38,9 +38,9 @@ export const projects: Project[] = [
     name: 'Spume App',
     preview: SpumePreview,
     url: 'https://app.spume.io/',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
+    description: 'Decentralized NFT marketplace where people can mint and trade NFTs by logging in with their MetaMask wallet.',
     techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
+    website: 'https://app.spume.io',
     slug: 'spume-app',
   },
   {
@@ -51,6 +51,8 @@ export const projects: Project[] = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
     techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
     slug: 'startup-landing-page',
+    website: 'https://app.spume.io/',
+    github: 'https://app.spume.io',
   },
   {
     name: 'Spume App',
@@ -61,5 +63,7 @@ export const projects: Project[] = [
 
     techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
     slug: 'spume-app',
+    website: 'https://app.spume.io',
+    github: 'https://app.spume.io',
   },
 ];
