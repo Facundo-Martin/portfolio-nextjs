@@ -26,7 +26,7 @@ type ProjectCardProps = {
 };
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="space-y-2 pb-3">
+    <Card className="space-y-1 pb-3 w-[22rem]">
       <Link href={`/projects/${project.slug}`}>
         <a>
           <Image src={project.preview} width={300} height={250} className="rounded-lg" />
@@ -34,11 +34,11 @@ function ProjectCard({ project }: ProjectCardProps) {
       </Link>
 
       <h5 className="font-semibold">{project.name}</h5>
-      <p className="py-1">{project.description}</p>
+      <p className="py-2">{project.description}</p>
       <div className="flex items-center gap-x-1">
         {project.techStack.map((tech, i) => (
-          <div>
-            {tech} {i < project.techStack.length - 1 ? '-' : ''}
+          <div className="text-sky-400">
+            {tech} {i < project.techStack.length - 1 && '-'}
           </div>
         ))}
       </div>
