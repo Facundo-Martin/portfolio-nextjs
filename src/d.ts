@@ -25,4 +25,5 @@ export type TechData = {
   name: string;
   category: string;
   logo: StaticImageData;
+  url: string;
 };

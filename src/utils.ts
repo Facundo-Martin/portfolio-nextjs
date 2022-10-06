@@ -10,22 +10,21 @@ import theodinproject from './assets/logos/theodinproject.png';
 import logos from './assets/logos/index';
 
 export const techStack: TechData[] = [
-  { name: 'TypeScript', category: 'Language', logo: logos.typescript },
-  { name: 'JavaScript', category: 'Language', logo: logos.javascript },
-  { name: 'CSS3', category: 'Language', logo: logos.css },
-  { name: 'HTML', category: 'Language', logo: logos.html },
-  { name: 'React', category: 'Framework', logo: logos.reactjs },
-  { name: 'Next.js', category: 'Framework', logo: logos.nextjs },
-  { name: 'Tailwind', category: 'Framework', logo: logos.tailwind },
-  { name: 'GraphQL', category: 'Framework', logo: logos.graphql },
-  { name: 'Apollo', category: 'Framework', logo: logos.apollographql },
-  { name: 'Git', category: 'Tool', logo: logos.git },
-  { name: 'Github', category: 'Tool', logo: logos.github },
-  { name: 'Jira', category: 'Tool', logo: logos.jira },
-  { name: 'Material UI', category: 'Others', logo: logos.mui },
-  { name: 'APIs', category: 'Others', logo: logos.api },
-  { name: 'Chart.js', category: 'Others', logo: logos.chartjs },
-  { name: 'VS Code', category: 'Others', logo: logos.vscode },
+  { name: 'TypeScript', category: 'Language', logo: logos.typescript, url: 'https://www.typescriptlang.org/' },
+  { name: 'JavaScript', category: 'Language', logo: logos.javascript, url: 'https://www.javascript.com/' },
+  { name: 'CSS3', category: 'Language', logo: logos.css, url: 'https://www.w3.org/Style/CSS/' },
+  { name: 'HTML', category: 'Language', logo: logos.html, url: 'https://html.com/' },
+  { name: 'React', category: 'Framework', logo: logos.reactjs, url: 'https://reactjs.org/' },
+  { name: 'Next.js', category: 'Framework', logo: logos.nextjs, url: 'https://nextjs.org/' },
+  { name: 'Tailwind', category: 'Framework', logo: logos.tailwind, url: 'https://tailwindcss.com/' },
+  { name: 'GraphQL', category: 'Framework', logo: logos.graphql, url: 'https://graphql.org/' },
+  { name: 'Apollo', category: 'Framework', logo: logos.apollographql, url: 'https://www.apollographql.com/' },
+  { name: 'Git', category: 'Tool', logo: logos.git, url: 'https://git-scm.com/' },
+  { name: 'Github', category: 'Tool', logo: logos.github, url: 'https://github.com/' },
+  { name: 'Jira', category: 'Tool', logo: logos.jira, url: 'https://www.atlassian.com/software/jira' },
+  { name: 'Material UI', category: 'Others', logo: logos.mui, url: 'https://mui.com/' },
+  { name: 'APIs', category: 'Others', logo: logos.api, url: 'https://aws.amazon.com/what-is/api/' },
+  { name: 'Chart.js', category: 'Others', logo: logos.chartjs, url: 'https://www.chartjs.org/' },
 ];
 
 export const projects: Project[] = [
