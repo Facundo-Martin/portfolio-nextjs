@@ -32,7 +32,7 @@ function ProjectMain({ project }: { project: Project }) {
           </div>
           <div>
             <h4>Built with:</h4>
-            <ul className="mt-6 ml-20 flex items-center gap-x-6 flex-wrap gap-y-4">
+            <ul className="mt-4 ml-20 flex items-center gap-x-6 flex-wrap gap-y-4">
               {project.techStack.map((name, i) => {
                 let tech = techStack.find((x) => x.name === name);
                 if (tech) {
