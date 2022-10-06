@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 function BreadLink({ href, icon: Icon, children }: { href?: string; icon: React.ElementType; children: React.ReactNode }) {
-  const breadStyle = 'ml-1 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-teal-500';
+  const breadStyle = 'ml-1 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400';
   return (
     <div className="flex items-center">
       <Icon className="h-5 w-5 flex-shrink-0 text-gray-600 dark:text-gray-400" aria-hidden="true" />
@@ -26,7 +26,7 @@ function ProjectBreadcrumbs({ className, title }: ProjectBreadcrumbsProps) {
     <nav className={clsx(className, 'flex items-center space-x-2')} aria-label="Breadcrumb">
       <Link href="/">
         <a>
-          <HomeIcon className="h-5 w-5 flex-shrink-0 text-gray-500/90 dark:text-gray-400 hover:text-teal-500" />
+          <HomeIcon className="h-5 w-5 flex-shrink-0 text-gray-500/90 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500" />
         </a>
       </Link>
       <BreadLink href="/projects" icon={ChevronRightIcon}>
