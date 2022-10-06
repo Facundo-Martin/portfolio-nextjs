@@ -7,7 +7,7 @@ function Header() {
   const router = useRouter();
   return (
     <header className="wrapper flex items-center justify-between py-6 bg-white dark:bg-zinc-800 shadow-sm border-x border-neutral-200/50 dark:border-neutral-700/50">
-      {router.asPath !== '/' ? <Headshot /> : <span></span>}
+      {router.asPath !== '/' ? <Headshot /> : <span className="w-12"></span>}
       <DesktopNavigation />
       <MobileNavigation />
     </header>

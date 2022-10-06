@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import clsx from 'clsx';
 // Components
 import { Button } from '../UI/Button';
-
-// import FacundoMartin from '../../assets/FacundoMartin.pdf';
 // Icons
 import { ArrowDownIcon, BriefcaseIcon, EnvelopeIcon, HomeIcon, InboxIcon } from '@heroicons/react/24/outline';
 import { InformationCircleIcon, MapIcon, PhoneIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
@@ -95,8 +92,8 @@ function Resume() {
         ))}
       </ol>
       <Button className="group mt-6 w-full">
-        {/* <a download href={FacundoMartin} className="flex items-center gap-2"> */}
-        <a className="flex items-center gap-2">
+        <a download href="/FacundoMartin.pdf" className="flex items-center gap-2">
+          {/* <a className="flex items-center gap-2"> */}
           {/* <a download href="#" className="flex items-center gap-2"> */}
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />

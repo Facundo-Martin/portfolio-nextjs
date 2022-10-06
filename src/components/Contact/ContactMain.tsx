@@ -2,12 +2,12 @@ import ContactMainInformation from './ContactMainInformation';
 
 export default function ContactMain() {
   return (
-    <section className="bg-white">
+    <section className="pb-12">
       {/* Contact section */}
 
       {/* Decorative dot pattern */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-white shadow-xl">
+        <div className="relative shadow-xl border dark:border-neutral-500/80 rounded-lg">
           <h2 id="contact-heading" className="sr-only">
             Contact us
           </h2>
@@ -24,13 +24,7 @@ export default function ContactMain() {
                     First name
                   </label>
                   <div className="mt-1">
-                    <input
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      autoComplete="given-name"
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                    />
+                    <input type="text" name="first-name" id="first-name" autoComplete="given-name" className="form-input" />
                   </div>
                 </div>
                 <div>
@@ -38,13 +32,7 @@ export default function ContactMain() {
                     Last name
                   </label>
                   <div className="mt-1">
-                    <input
-                      type="text"
-                      name="last-name"
-                      id="last-name"
-                      autoComplete="family-name"
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                    />
+                    <input type="text" name="last-name" id="last-name" autoComplete="family-name" className="form-input" />
                   </div>
                 </div>
                 <div>
@@ -52,13 +40,7 @@ export default function ContactMain() {
                     Email
                   </label>
                   <div className="mt-1">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                    />
+                    <input id="email" name="email" type="email" autoComplete="email" className="form-input" />
                   </div>
                 </div>
                 <div>
@@ -67,18 +49,11 @@ export default function ContactMain() {
                       Phone
                     </label>
                     <span id="phone-optional" className="text-sm text-warm-gray-500">
-                      Optional
+                      *Optional
                     </span>
                   </div>
                   <div className="mt-1">
-                    <input
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      autoComplete="tel"
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                      aria-describedby="phone-optional"
-                    />
+                    <input type="text" name="phone" id="phone" autoComplete="tel" className="form-input" aria-describedby="phone-optional" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
@@ -86,12 +61,7 @@ export default function ContactMain() {
                     Subject
                   </label>
                   <div className="mt-1">
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                    />
+                    <input type="text" name="subject" id="subject" className="form-input" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
@@ -104,14 +74,7 @@ export default function ContactMain() {
                     </span>
                   </div>
                   <div className="mt-1">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                      aria-describedby="message-max"
-                      defaultValue={''}
-                    />
+                    <textarea id="message" name="message" rows={4} className="form-input" aria-describedby="message-max" defaultValue={''} />
                   </div>
                 </div>
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
