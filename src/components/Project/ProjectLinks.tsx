@@ -1,7 +1,5 @@
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
 import React from 'react';
-import Card from '../UI/Card';
 import { GitHubIcon } from '../UI/SocialIcons';
 
 type ProjectLinksProps = {
@@ -16,7 +14,7 @@ function ProjectLinks({ website, github }: ProjectLinksProps) {
         <p className="font-medium">Website</p>
       </a>
       {github == 'private' || !github ? (
-        <div className="project-button">
+        <div className="project-button cursor-default">
           <GitHubIcon className="w-5 dark:fill-white" />
           <p className="font-medium">Private</p>
         </div>
