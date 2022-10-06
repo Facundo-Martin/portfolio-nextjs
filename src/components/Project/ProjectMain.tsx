@@ -9,14 +9,32 @@ function ProjectMain({ project }: { project: Project }) {
     <section className="section pt-0">
       <Card className="max-w-none flex flex-col gap-y-6 md:flex-row gap-x-6">
         <a href={project.url} target="_blank" rel="noreferrer" className="flex-1 relative group">
-          <div className="hidden group-hover:grid absolute inset-0 place-items-center z-10">
-            <div className="px-4 py-2 bg-white rounded-lg text-gray-600 font-semibold">Visit Website</div>
-          </div>
-          <Image src={project.preview} width={1200} height={1000} className="rounded-lg group-hover:opacity-60" />
+          <Image src={project.preview} width={600} height={500} className="rounded-lg group-hover:opacity-80" />
         </a>
-        <div className="flex-1">
+        <div className="flex-1 space-y-6">
           <ProjectLinks website={project.website} github={project.github ? project.github : ''} />
-          <p className="mt-4">{project.description}</p>
+          <div className="mt-4 space-y-1">
+            <p>{project.description}</p>
+            <p>{project.description}</p>
+          </div>
+          <div className="mt-4">
+            <h4>Main features:</h4>
+            <ul className="ml-32 ">
+              {project.features.map((feature, i) => (
+                <li key={i} className="list-disc">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4>Built with:</h4>
+            <ul className="mt-4 ml-6 flex items-center gap-x-10 ">
+              {project.features.map((feature, i) => (
+                <li key={i}>tech</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Card>
     </section>

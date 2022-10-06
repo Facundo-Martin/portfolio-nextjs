@@ -9,6 +9,7 @@ export type Project = {
   slug: string;
   website: string;
   github?: string;
+  features: string[];
 };
 
 export type ResumeItem = {

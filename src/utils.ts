@@ -42,6 +42,7 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
     website: 'https://app.spume.io',
     slug: 'spume-app',
+    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
   },
   {
     name: 'Startup Landing Page',
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     slug: 'startup-landing-page',
     website: 'https://app.spume.io/',
     github: 'https://app.spume.io',
+    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
   },
   {
     name: 'Spume App',
@@ -65,5 +67,6 @@ export const projects: Project[] = [
     slug: 'spume-app',
     website: 'https://app.spume.io',
     github: 'https://app.spume.io',
+    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
   },
 ];
