@@ -3,10 +3,13 @@ import { StaticImageData } from 'next/image';
 export type Project = {
   name: string;
   preview: StaticImageData;
-  url: string;
   description: string;
+  description2: string;
   techStack: string[];
   slug: string;
+  website: string;
+  github?: string;
+  features: string[];
 };
 
 export type ResumeItem = {
@@ -16,4 +19,11 @@ export type ResumeItem = {
   logo: StaticImageData;
   start: number | string;
   end: number | string;
+};
+
+export type TechData = {
+  name: string;
+  category: string;
+  logo: StaticImageData;
+  url: string;
 };

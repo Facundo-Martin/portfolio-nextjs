@@ -4,10 +4,10 @@ import ProjectsMain from './ProjectsMain';
 
 function RenderProjects() {
   return (
-    <div className="pt-10">
-      <ProjectsHero />
+    <>
+      {/* <ProjectsHero /> */}
       <ProjectsMain />
-    </div>
+    </>
   );
 }
 
