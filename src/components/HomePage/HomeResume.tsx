@@ -6,6 +6,7 @@ import { Button } from '../UI/Button';
 import { ArrowDownIcon, BriefcaseIcon, EnvelopeIcon, HomeIcon, InboxIcon } from '@heroicons/react/24/outline';
 import { InformationCircleIcon, MapIcon, PhoneIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
 import { resume } from '../../utils';
+import Card from '../UI/Card';
 
 type NavLinkProps = {
   children: React.ReactNode;
@@ -28,7 +29,7 @@ function NavLink({ className, href, children, icon: Icon }: NavLinkProps) {
 
 function HomeNav() {
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-sm">
+    <Card>
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 pb-4 border-b border-zinc-200 dark:border-zinc-600/50">
         <MapIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Navigation</span>
@@ -55,13 +56,13 @@ function HomeNav() {
           (279) 977 - 5880
         </NavLink>
       </ul>
-    </div>
+    </Card>
   );
 }
 
 function Resume() {
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-sm">
+    <Card>
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Experience</span>
@@ -99,12 +100,12 @@ function Resume() {
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-600 transition group-active:stroke-zinc-600 dark:stroke-zinc-300 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-100" />
         </a>
       </Button>
-    </div>
+    </Card>
   );
 }
 function HomeResume() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-sm">
       <Resume />
       <HomeNav />
     </div>
