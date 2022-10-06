@@ -7,7 +7,7 @@ import ProjectLinks from './ProjectLinks';
 function ProjectMain({ project }: { project: Project }) {
   return (
     <section className="section pt-0">
-      <Card className="max-w-none flex gap-x-6">
+      <Card className="max-w-none flex flex-col gap-y-6 md:flex-row gap-x-6">
         <a href={project.url} target="_blank" rel="noreferrer" className="flex-1 relative group">
           <div className="hidden group-hover:grid absolute inset-0 place-items-center z-10">
             <div className="px-4 py-2 bg-white rounded-lg text-gray-600 font-semibold">Visit Website</div>
@@ -16,7 +16,7 @@ function ProjectMain({ project }: { project: Project }) {
         </a>
         <div className="flex-1">
           <ProjectLinks website={project.website} github={project.github ? project.github : ''} />
-          <div>{project.description}</div>
+          <p className="mt-4">{project.description}</p>
         </div>
       </Card>
     </section>
