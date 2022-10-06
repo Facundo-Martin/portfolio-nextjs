@@ -36,11 +36,14 @@ function ProjectCard({ project }: ProjectCardProps) {
       <h5 className="font-semibold">{project.name}</h5>
       <p className="py-2">{project.description}</p>
       <div className="flex items-center gap-x-1">
-        {project.techStack.map((tech, i) => (
-          <div className="text-sky-500">
-            {tech} {i < project.techStack.length - 1 && '-'}
-          </div>
-        ))}
+        {project.techStack.map((name, i) => {
+          if (name == 'React' && project.techStack.includes('Next.js')) return;
+          return (
+            <div className="text-sky-500">
+              {name} {i < project.techStack.length - 1 && '-'}
+            </div>
+          );
+        })}
       </div>
       <ReadMore slug={project.slug} />
     </Card>

@@ -9,15 +9,15 @@ import ProjectLinks from './ProjectLinks';
 function ProjectMain({ project }: { project: Project }) {
   return (
     <section className="section pt-0">
-      <Card className="max-w-none flex flex-col gap-y-6 md:flex-row gap-x-6">
+      <Card className=" w-fit mx-auto flex flex-col gap-y-6 lg:flex-row gap-x-6 hover:shadow-none">
         <a href={project.website} target="_blank" rel="noreferrer" className="flex-1 relative group">
           <Image src={project.preview} width={600} height={500} className="rounded-lg group-hover:opacity-80" />
         </a>
         <div className="flex-1 space-y-6">
           <ProjectLinks website={project.website} github={project.github ? project.github : ''} />
-          <div className="mt-4 space-y-1">
+          <div className="mt-4 space-y-1 max-w-lg">
             <p>{project.description}</p>
-            <p>{project.description}</p>
+            <p className="hidden xl:block">{project.description}</p>
           </div>
           <div className="mt-4">
             <h4>Main features:</h4>
@@ -31,7 +31,7 @@ function ProjectMain({ project }: { project: Project }) {
           </div>
           <div>
             <h4>Built with:</h4>
-            <ul className="mt-4 ml-6 flex items-center gap-x-10 ">
+            <ul className="mt-6 ml-20 flex items-center gap-x-6">
               {project.techStack.map((name, i) => {
                 let tech = techStack.find((x) => x.name === name);
                 if (tech) {

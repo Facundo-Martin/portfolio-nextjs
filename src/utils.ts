@@ -64,7 +64,7 @@ export const projects: Project[] = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
     features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
-    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
+    techStack: ['Next.js', 'React', 'GraphQL', 'TailwindCSS'],
   },
 ];
 
