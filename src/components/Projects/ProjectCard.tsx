@@ -1,5 +1,4 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import { Divide } from 'hamburger-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -39,7 +38,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         {project.techStack.map((name, i) => {
           if (name == 'React' && project.techStack.includes('Next.js')) return;
           return (
-            <div className="text-sky-500">
+            <div key={name} className="text-sky-500">
               {name} {i < project.techStack.length - 1 && '-'}
             </div>
           );

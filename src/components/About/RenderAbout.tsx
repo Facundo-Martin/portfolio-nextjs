@@ -67,8 +67,8 @@ export default function RenderAbout() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I never thought I'd end up as as Software Developer, but since I'm already here I might as well do it to the best of my ability. So I'm gonna do
-                this the old-fashioned way, with two swords and with <MaximumEffort />
+                I never thought I&apos;d end up as as Software Developer, but since I&apos;m already here I might as well do it to the best of my ability. So
+                I&apos;m gonna do this the old-fashioned way, with two swords and with <MaximumEffort />
               </p>
               <p>
                 I enjoy working at startup environments, where things are fast-paced and we need to figure things out as a team. I like the level of{' '}
@@ -76,17 +76,17 @@ export default function RenderAbout() {
                 the opportunity to take more responsibility and ownership for my code.
               </p>
               <p>
-                I spend most of my time coding, learning new technologies, and trying to write cleaner code. Seriously, I'm that boring. When I'm not coding I'm
-                either at the gym or contemplating my molecular existence in this vast and non-sensical universe.
+                I spend most of my time coding, learning new technologies, and trying to write cleaner code. Seriously, I&apos;m that boring. When I&apos;m not
+                coding I&apos;m either at the gym or contemplating my molecular existence in this vast and non-sensical universe.
               </p>
               <p>
-                Today, I’m mostly focused on honing my skills as a React Developer.
+                Today, I&apos;m mostly focused on honing my skills as a React Developer.
                 <br />
-                Tomorrow, I'd like to be able to lead a team and teach people the things I wish I had learned faster or better.
+                Tomorrow, I&apos;d like to be able to lead a team and teach people the things I wish I had learned faster or better.
               </p>
               <p>
-                Maybe I'll even teach my parents how to code. They are still learning how to change the source mode on the TV though. <br /> So maybe once they
-                figure that one out (2-5 years) we can move on to some HTML & CSS.
+                Maybe I&apos;ll even teach my parents how to code. They are still learning how to change the source mode on the TV though. <br /> So maybe once
+                they figure that one out (2-5 years) we can move on to some HTML & CSS.
               </p>
             </div>
           </div>

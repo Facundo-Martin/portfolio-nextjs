@@ -72,7 +72,7 @@ export default function ContactMainInformation() {
       <DetailsBackground />
       <h3 className="text-lg font-medium text-white">Contact information</h3>
       <p className="mt-6 max-w-3xl text-base text-teal-50">
-        Honestly, email and phone number are your safest bet since I don't spend much time on other social networks.
+        Honestly, email and phone number are your safest bet since I don&apos;t spend much time on other social networks.
       </p>
       <dl className="mt-8 space-y-6">
         <dt>

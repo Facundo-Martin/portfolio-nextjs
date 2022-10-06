@@ -20,7 +20,7 @@ function TechStack() {
         <h1 className={styles.title}>Programming Languages</h1>
         <div className={styles.flex}>
           {languages.map((tech) => (
-            <TechLogo tech={tech} />
+            <TechLogo key={tech.name} tech={tech} />
           ))}
         </div>
       </div>
@@ -28,7 +28,7 @@ function TechStack() {
         <h1 className={styles.title}>Frameworks</h1>
         <div className={styles.flex}>
           {frameworks.map((tech) => (
-            <TechLogo tech={tech} />
+            <TechLogo key={tech.name} tech={tech} />
           ))}
         </div>
       </div>
@@ -36,7 +36,7 @@ function TechStack() {
         <h1 className={styles.title}>Tools of the trade</h1>
         <div className={styles.flex}>
           {tools.map((tech) => (
-            <TechLogo tech={tech} />
+            <TechLogo key={tech.name} tech={tech} />
           ))}
         </div>
       </div>
