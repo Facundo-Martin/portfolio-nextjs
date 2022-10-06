@@ -10,7 +10,12 @@ type TechLogoProps = {
 
 function TechLogo({ tech, size = 'sm' }: TechLogoProps) {
   return (
-    <div className="flex flex-col items-center gap-y-1 opacity-80 hover:opacity-100 cursor-pointer hover:-translate-y-[6px] transition duration-700 group">
+    <a
+      href={tech.url}
+      target="_blank"
+      rel="noreferrer"
+      className="flex flex-col items-center gap-y-1 opacity-80 hover:opacity-100 cursor-pointer hover:-translate-y-[6px] transition duration-700 group"
+    >
       <div className={size == 'sm' ? 'w-12' : 'w-14'}>
         <Image src={tech.logo} alt={`${tech.name} logo`} height={50} width={50} layout="responsive" className="rounded-sm" />
       </div>
@@ -22,7 +27,7 @@ function TechLogo({ tech, size = 'sm' }: TechLogoProps) {
       >
         {tech.name}
       </h4>
-    </div>
+    </a>
   );
 }
 
