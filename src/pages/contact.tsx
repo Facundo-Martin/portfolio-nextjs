@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title> Home | Facundo Martin</title>
+        <title> Contact | Facundo Martin</title>
       </Head>
       <Layout>
         <RenderContact />

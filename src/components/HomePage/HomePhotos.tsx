@@ -1,13 +1,8 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import React from 'react';
-import image1 from '../../assets/photos/image-1.jpg';
-import image2 from '../../assets/photos/image-2.jpg';
-import image3 from '../../assets/photos/image-3.jpg';
-import image4 from '../../assets/photos/image-4.jpg';
-import image5 from '../../assets/photos/image-5.jpg';
-
-const images = [image1, image2, image3, image4, image5];
+import photos from '../../assets/photos/index';
+const images = [photos.image1, photos.image2, photos.image3, photos.image4, photos.image5];
 
 function HomePhotos() {
   const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
@@ -19,7 +14,7 @@ function HomePhotos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[8/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length]
             )}
           >
