@@ -6,6 +6,7 @@ import RundooPreview from './assets/RundooPreview.png';
 import culturalcare from './assets/logos/culturalcare.png';
 import spume from './assets/logos/spume.png';
 import theodinproject from './assets/logos/theodinproject.png';
+import logos from './assets/logos/index';
 
 export const resume: ResumeItem[] = [
   {
@@ -69,4 +70,20 @@ export const projects: Project[] = [
     github: 'https://app.spume.io',
     features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
   },
+];
+
+export const techStack = [
+  { name: 'TypeScript', category: 'Language', logo: logos.typescript },
+  { name: 'JavaScript', category: 'Language', logo: logos.javascript },
+  { name: 'CSS3', category: 'Language', logo: logos.css },
+  { name: 'HTML', category: 'Language', logo: logos.html },
+  { name: 'React', category: 'Framework', logo: logos.reactjs },
+  { name: 'Next', category: 'Framework', logo: logos.nextjs },
+  { name: 'Tailwind CSS', category: 'Framework', logo: logos.tailwind },
+  { name: 'GraphQL', category: 'Framework', logo: logos.graphql },
+  { name: 'Apollo', category: 'Framework', logo: logos.apollographql },
+  { name: 'Git', category: 'Tool', logo: logos.git },
+  { name: 'Github', category: 'Tool', logo: logos.github },
+  { name: 'Jira', category: 'Tool', logo: logos.jira },
+  { name: 'VS Code', category: 'Tool', logo: logos.vscode },
 ];
