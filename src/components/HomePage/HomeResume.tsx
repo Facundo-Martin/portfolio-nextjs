@@ -49,7 +49,11 @@ function HomeNav() {
             Contact
           </NavLink>
         </nav>
-        <NavLink href="mailto:facundomartin98@gmail.com" icon={EnvelopeIcon} className="mt-6 border-t border-zinc-200 pt-5 dark:border-zinc-600/50">
+        <NavLink
+          href="mailto:facundomartin98@gmail.com?subject=React Developer Position&body=Hi Facundo, I'm (name) and I work at (company) as a (position). We are currently looking for a React Developer who is well versed in (skills). After seeing your portfolio and work experience, we believe you are a strong candidate for this position. Please contact us at (contact info)"
+          icon={EnvelopeIcon}
+          className="mt-6 border-t border-zinc-200 pt-5 dark:border-zinc-600/50"
+        >
           facundomartin98@gmail.com
         </NavLink>
         <NavLink href="tel:+1-279-977-5880" icon={PhoneIcon} className="mt-4">
