@@ -17,7 +17,7 @@ function ProjectMain({ project }: { project: Project }) {
           <ProjectLinks website={project.website} github={project.github ? project.github : ''} />
           <div className="mt-4 space-y-1 max-w-lg">
             <p>{project.description}</p>
-            <p className="hidden xl:block">{project.description}</p>
+            <p className="hidden xl:block">{project.description2}</p>
           </div>
           <div className="mt-4">
             <h4>Main features:</h4>

@@ -32,7 +32,8 @@ export const projects: Project[] = [
     preview: SpumePreview,
     website: 'https://app.spume.io',
     description: 'Decentralized NFT marketplace where people can mint and trade NFTs by logging in with their MetaMask wallet.',
-    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
+    description2: "Explore your favorite collections on Spume's supported chains and start trading your favorite NFTs. ",
+    features: ['Smart wallet sign in and account creation', 'Endless scrolling for collection items', 'Recently added cross-chain support'],
     techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Tailwind'],
   },
   {
@@ -41,9 +42,10 @@ export const projects: Project[] = [
     preview: RundooPreview,
     website: 'https://rundoo-facundo-martin.vercel.app/',
     github: 'https://github.com/Facundo-Martin/Rundoo-Landing-Page',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis.',
-    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
-    techStack: ['Next.js', 'Tailwind', 'Google Maps API'],
+    description: 'Simple and elegant landing page for any startup looking to showcase their app, team and the solutions they offer.',
+    description2: 'Improve your online presence and let people know about the services you offer and what your company stands for.',
+    features: ['Fully responsive and fast website', 'Integrated Google Maps API for directions', 'Implemented Headless UI and animations'],
+    techStack: ['Next.js', 'React', 'Tailwind', 'Google Maps API'],
   },
   {
     name: 'COVID-19 Tracker',
@@ -52,7 +54,8 @@ export const projects: Project[] = [
     website: 'https://react-covid-tracker2-db6b3.web.app/',
     github: 'https://github.com/Facundo-Martin/react-covid-tracker2',
     description: 'React app with data visualization tools for users to stay up to date with the latest covid statistics and news.',
-    features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
+    description2: 'Filter and compare the latest covid statistics by country and browse the most up to date articles on the topic.',
+    features: ['Data Visualization with Chart.js and Leaflet', 'API integration for statistics and articles', 'Responsive design with Material UI'],
     techStack: ['React', 'Chart.js', 'APIs', 'Material UI'],
   },
 ];

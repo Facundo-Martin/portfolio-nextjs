@@ -4,6 +4,7 @@ export type Project = {
   name: string;
   preview: StaticImageData;
   description: string;
+  description2: string;
   techStack: string[];
   slug: string;
   website: string;
