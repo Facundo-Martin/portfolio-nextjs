@@ -12,7 +12,7 @@ function MaximumEffort() {
     <span className="group relative">
       <span className="underline underline-offset-2">maximum effort.</span>
       <div className="hidden group-hover:block absolute -top-40 w-[28rem] ">
-        <Image src={Deadpool} width={800} height={800} layout="responsive" />
+        <Image src={Deadpool} alt="Deadpool maximum effort gif" width={800} height={800} layout="responsive" />
       </div>
     </span>
   );

@@ -28,7 +28,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     <Card className="space-y-1 pb-3 w-[22rem]">
       <Link href={`/projects/${project.slug}`}>
         <a>
-          <Image src={project.preview} width={300} height={250} className="rounded-lg" />
+          <Image src={project.preview} alt={`${project.name} website preview`} width={300} height={250} className="rounded-lg" />
         </a>
       </Link>
 

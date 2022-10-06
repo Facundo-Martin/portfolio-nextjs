@@ -75,7 +75,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-zinc-500/50">
-              <a href={role.url} target="_blank" rel="no-referrer">
+              <a href={role.url} target="_blank" rel="noreferrer">
                 <div className="w-8">
                   <Image src={role.logo} alt="" width={20} height={20} unoptimized layout="responsive" className="rounded-full" />
                 </div>
