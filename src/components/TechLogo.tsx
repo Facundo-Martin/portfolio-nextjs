@@ -1,16 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import { techStack } from '../../utils';
+import { TechData } from '../d';
 
 type TechLogoProps = {
-  name: string;
+  tech: TechData;
 };
 
-function TechLogo({ name }: TechLogoProps) {
-  let tech = techStack.find((x) => x.name === name);
-
-  if (!tech) return;
-
+function TechLogo({ tech }: TechLogoProps) {
   return (
     <div className="flex flex-col items-center gap-y-1 opacity-80 hover:opacity-100 cursor-pointer hover:-translate-y-[6px] transition duration-700 group">
       <div className="w-14">

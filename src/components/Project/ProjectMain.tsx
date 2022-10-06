@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
 import { Project } from '../../d';
+import { techStack } from '../../utils';
 import Card from '../UI/Card';
+import TechLogo from '../TechLogo';
 import ProjectLinks from './ProjectLinks';
 
 function ProjectMain({ project }: { project: Project }) {
   return (
     <section className="section pt-0">
       <Card className="max-w-none flex flex-col gap-y-6 md:flex-row gap-x-6">
-        <a href={project.url} target="_blank" rel="noreferrer" className="flex-1 relative group">
+        <a href={project.website} target="_blank" rel="noreferrer" className="flex-1 relative group">
           <Image src={project.preview} width={600} height={500} className="rounded-lg group-hover:opacity-80" />
         </a>
         <div className="flex-1 space-y-6">
@@ -30,9 +32,12 @@ function ProjectMain({ project }: { project: Project }) {
           <div>
             <h4>Built with:</h4>
             <ul className="mt-4 ml-6 flex items-center gap-x-10 ">
-              {project.features.map((feature, i) => (
-                <li key={i}>tech</li>
-              ))}
+              {project.techStack.map((name, i) => {
+                let tech = techStack.find((x) => x.name === name);
+                if (tech) {
+                  return <TechLogo key={i} tech={tech} />;
+                }
+              })}
             </ul>
           </div>
         </div>

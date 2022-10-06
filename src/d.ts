@@ -3,7 +3,6 @@ import { StaticImageData } from 'next/image';
 export type Project = {
   name: string;
   preview: StaticImageData;
-  url: string;
   description: string;
   techStack: string[];
   slug: string;
@@ -19,4 +18,10 @@ export type ResumeItem = {
   logo: StaticImageData;
   start: number | string;
   end: number | string;
+};
+
+export type TechData = {
+  name: string;
+  category: string;
+  logo: StaticImageData;
 };

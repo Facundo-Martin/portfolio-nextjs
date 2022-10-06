@@ -1,4 +1,4 @@
-import { Project, ResumeItem } from './d';
+import { Project, ResumeItem, TechData } from './d';
 // Project images
 import SpumePreview from './assets/SpumePreview.png';
 import RundooPreview from './assets/RundooPreview.png';
@@ -37,49 +37,45 @@ export const resume: ResumeItem[] = [
 export const projects: Project[] = [
   {
     name: 'Spume App',
-    preview: SpumePreview,
-    url: 'https://app.spume.io/',
-    description: 'Decentralized NFT marketplace where people can mint and trade NFTs by logging in with their MetaMask wallet.',
-    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
-    website: 'https://app.spume.io',
     slug: 'spume-app',
+    preview: SpumePreview,
+    website: 'https://app.spume.io',
+    description: 'Decentralized NFT marketplace where people can mint and trade NFTs by logging in with their MetaMask wallet.',
     features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
+    techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Tailwind'],
   },
   {
     name: 'Startup Landing Page',
-    preview: RundooPreview,
-    url: 'https://rundoo-facundo-martin.vercel.app/',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
-    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
     slug: 'startup-landing-page',
+    preview: RundooPreview,
     website: 'https://app.spume.io/',
     github: 'https://app.spume.io',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
     features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
+    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
   },
   {
     name: 'Spume App',
+    slug: 'spume-app',
     preview: SpumePreview,
-    url: 'https://app.spume.io/',
+    website: 'https://rundoo-facundo-martin.vercel.app/',
+    github: 'https://app.spume.io',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit doloribus illo ea, aut id repellat obcaecati? Omnis nesciunt sunt aut, numquam dolores ',
-
-    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
-    slug: 'spume-app',
-    website: 'https://app.spume.io',
-    github: 'https://app.spume.io',
     features: ['Built with blabla', 'Implemented aklsdhjklajs asdklfjsd klajslad kj', 'asjkdfhsjka sdkfjh sdfjkhasdjk'],
+    techStack: ['Next.js', 'GraphQL', 'TailwindCSS'],
   },
 ];
 
-export const techStack = [
+export const techStack: TechData[] = [
   { name: 'TypeScript', category: 'Language', logo: logos.typescript },
   { name: 'JavaScript', category: 'Language', logo: logos.javascript },
   { name: 'CSS3', category: 'Language', logo: logos.css },
   { name: 'HTML', category: 'Language', logo: logos.html },
   { name: 'React', category: 'Framework', logo: logos.reactjs },
-  { name: 'Next', category: 'Framework', logo: logos.nextjs },
-  { name: 'Tailwind CSS', category: 'Framework', logo: logos.tailwind },
+  { name: 'Next.js', category: 'Framework', logo: logos.nextjs },
+  { name: 'Tailwind', category: 'Framework', logo: logos.tailwind },
   { name: 'GraphQL', category: 'Framework', logo: logos.graphql },
   { name: 'Apollo', category: 'Framework', logo: logos.apollographql },
   { name: 'Git', category: 'Tool', logo: logos.git },
