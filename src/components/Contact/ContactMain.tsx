@@ -2,12 +2,12 @@ import ContactMainInformation from './ContactMainInformation';
 
 export default function ContactMain() {
   return (
-    <section className="bg-white">
+    <section className="pb-12">
       {/* Contact section */}
 
       {/* Decorative dot pattern */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-white shadow-xl">
+        <div className="relative shadow-xl border dark:border-neutral-500/80 rounded-lg">
           <h2 id="contact-heading" className="sr-only">
             Contact us
           </h2>
