@@ -15,6 +15,9 @@ const logos = {
   theodinproject: require('./theodinproject.png'),
   typescript: require('./typescript.svg'),
   vscode: require('./vscode.png'),
+  mui: require('./mui.svg'),
+  api: require('./api.png'),
+  chartjs: require('./chartjs.svg'),
 };
 
 export default logos;

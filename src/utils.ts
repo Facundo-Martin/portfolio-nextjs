@@ -22,7 +22,10 @@ export const techStack: TechData[] = [
   { name: 'Git', category: 'Tool', logo: logos.git },
   { name: 'Github', category: 'Tool', logo: logos.github },
   { name: 'Jira', category: 'Tool', logo: logos.jira },
-  { name: 'VS Code', category: 'Tool', logo: logos.vscode },
+  { name: 'Material UI', category: 'Others', logo: logos.mui },
+  { name: 'APIs', category: 'Others', logo: logos.api },
+  { name: 'Chart.js', category: 'Others', logo: logos.chartjs },
+  { name: 'VS Code', category: 'Others', logo: logos.vscode },
 ];
 
 export const projects: Project[] = [
