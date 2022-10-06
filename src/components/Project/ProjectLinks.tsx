@@ -9,27 +9,21 @@ type ProjectLinksProps = {
   github: string;
 };
 function ProjectLinks({ website, github }: ProjectLinksProps) {
-  const cardStyle =
-    'rounded-lg px-3 py-1 flex items-center gap-x-1 border-neutral-400/80 hover:bg-neutral-50/60 dark:shadow-none dark:border-neutral-400/70 dark:hover:bg-neutral-700';
   return (
     <div className="flex items-center gap-x-3">
-      <a href={website} target="_blank" rel="noreferrer">
-        <Card className={cardStyle}>
-          <GlobeAltIcon className="w-5" />
-          <p className="font-medium">Website</p>
-        </Card>
+      <a href={website} target="_blank" rel="noreferrer" className="project-button">
+        <GlobeAltIcon className="w-5" />
+        <p className="font-medium">Website</p>
       </a>
       {github == 'private' || !github ? (
-        <Card className={clsx(cardStyle, 'cursor-default')}>
+        <div className="project-button">
           <GitHubIcon className="w-5 dark:fill-white" />
           <p className="font-medium">Private</p>
-        </Card>
+        </div>
       ) : (
-        <a href={github} target="_blank" rel="noreferrer">
-          <Card className={cardStyle}>
-            <GitHubIcon className="w-5 dark:fill-white" />
-            <p className="font-medium">Github</p>
-          </Card>
+        <a href={github} target="_blank" rel="noreferrer" className="project-button">
+          <GitHubIcon className="w-5 dark:fill-white" />
+          <p className="font-medium">Github</p>
         </a>
       )}
     </div>
