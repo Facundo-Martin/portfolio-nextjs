@@ -4,6 +4,7 @@ import ProjectHero from './ProjectHero';
 import ProjectMain from './ProjectMain';
 
 function RenderProject({ project }: { project: Project }) {
+  console.log('STUPIDPROJECT:', project);
   return (
     <>
       <ProjectHero title={project.name} />
