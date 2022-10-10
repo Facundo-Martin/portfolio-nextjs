@@ -11,7 +11,14 @@ function ProjectMain({ project }: { project: Project }) {
     <section className="section pt-0">
       <Card className=" w-fit mx-auto flex flex-col gap-y-6 xl:flex-row gap-x-6 hover:shadow-none">
         <a href={project.website} target="_blank" rel="noreferrer" className="flex-1 relative group">
-          <Image src={project.preview} width={600} height={500} className="rounded-lg group-hover:opacity-80" alt={`${project.name} website preview`} />
+          <Image
+            src={project.preview}
+            width={600}
+            height={500}
+            className="rounded-lg group-hover:opacity-80"
+            alt={`${project.name} website preview`}
+            priority
+          />
         </a>
         <div className="flex-1 space-y-6">
           <ProjectLinks website={project.website} github={project.github ? project.github : ''} />
