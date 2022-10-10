@@ -18,7 +18,7 @@ function HomePhotos() {
               rotations[imageIndex % rotations.length]
             )}
           >
-            <Image src={image} alt="" sizes="(min-width: 640px) 18rem, 11rem" className="absolute inset-0 h-full w-full object-cover" />
+            <Image src={image} alt="" height={1000} width={800} className=" object-cover" priority />
           </div>
         ))}
       </div>
