@@ -7,7 +7,7 @@ import Card from '../UI/Card';
 const styles = {
   wrapper: 'border-b pb-6 border-zinc-200 dark:border-zinc-600/50 group',
   title: 'mb-3 font-medium text-zinc-700 dark:text-zinc-200',
-  flex: 'flex items-center gap-x-10 pt-3',
+  flex: 'flex items-center gap-x-6 flex-wrap gap-y-4 pt-3',
 };
 
 function TechStack() {
