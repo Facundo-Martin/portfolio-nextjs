@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <title>Home | Facundo Martin</title>
         <meta
           name="description"
-          content="I’m Facundo Martin, a software developer based in Roseville, California. I develop amazing applications using React - more specifically NextJS - and Tailwind CSS."
+          content="I’m Facundo Martin, a software developer based in Roseville, California. I develop amazing applications using Next.js (React), GraphQL, and Tailwind CSS."
         />
       </Head>
       <Layout>

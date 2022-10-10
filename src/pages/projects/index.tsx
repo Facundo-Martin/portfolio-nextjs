@@ -7,7 +7,7 @@ const Projects: NextPage = () => {
   return (
     <>
       <Head>
-        <title> Home | Facundo Martin</title>
+        <title> Projects | Facundo Martin</title>
       </Head>
       <Layout>
         <RenderProjects />

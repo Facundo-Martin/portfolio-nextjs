@@ -36,7 +36,7 @@ const Project: NextPage = ({ project }: InferGetStaticPropsType<typeof getStatic
   return (
     <>
       <Head>
-        <title> Home | Facundo Martin</title>
+        <title> {project.name} | Facundo Martin</title>
       </Head>
       <Layout>
         <RenderProject project={project} />
