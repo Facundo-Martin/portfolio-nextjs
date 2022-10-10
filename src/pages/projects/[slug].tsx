@@ -39,10 +39,7 @@ const Project: NextPage = ({ project }: InferGetStaticPropsType<typeof getStatic
         <title> Home | Facundo Martin</title>
       </Head>
       <Layout>
-        <>
-          {project && <RenderProject project={project} />}
-          {!project && <div>No project</div>}
-        </>
+        <RenderProject project={project} />
       </Layout>
     </>
   );
