@@ -8,7 +8,7 @@ function HomePhotos() {
   const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
-    <section className="pt-16 sm:pt-20 section">
+    <section className="pt-16 sm:pt-20 section overflow-hidden xl:overflow-visible">
       <div className="-my-4 flex justify-center gap-5 overflow-visible py-4 sm:gap-8">
         {images.map((image, imageIndex) => (
           <div
