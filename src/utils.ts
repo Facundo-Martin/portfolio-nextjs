@@ -1,8 +1,8 @@
 import { Project, ResumeItem, TechData } from './d';
 // Project images
-import SpumePreview from './assets/SpumePreview.png';
-import RundooPreview from './assets/RundooPreview.png';
-import CovidTrackerPreview from './assets/CovidTrackerPreview.png';
+import SpumePreview from './assets/SpumePreview.webp';
+import RundooPreview from './assets/RundooPreview.webp';
+import CovidTrackerPreview from './assets/CovidTrackerPreview.webp';
 // Resume images
 import culturalcare from './assets/logos/culturalcare.png';
 import spume from './assets/logos/spume.png';
