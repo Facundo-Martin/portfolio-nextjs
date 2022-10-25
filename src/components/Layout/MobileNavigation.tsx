@@ -63,6 +63,7 @@ function MobileNavigation() {
                   <MobileNavItem href="/">Home</MobileNavItem>
                   <MobileNavItem href="/about">About</MobileNavItem>
                   <MobileNavItem href="/projects">Projects</MobileNavItem>
+                  <MobileNavItem href="/blog">Blog</MobileNavItem>
                   <MobileNavItem href="/contact">Contact</MobileNavItem>
                 </ul>
               </nav>

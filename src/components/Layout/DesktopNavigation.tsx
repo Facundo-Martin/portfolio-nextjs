@@ -37,6 +37,7 @@ export default function DesktopNavigation() {
         <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
         <NavItem href="/projects">Projects</NavItem>
+        <NavItem href="/blog">Blog</NavItem>
         <NavItem href="/contact">Contact</NavItem>
       </ul>
       <span className="hidden md:block">
