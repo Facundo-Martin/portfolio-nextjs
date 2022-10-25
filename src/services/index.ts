@@ -34,4 +34,6 @@ export const getPosts = async () => {
     }
   `;
   const result = await request(graphQLAPI, query);
+
+  return result.postsConnection.edges;
 };
