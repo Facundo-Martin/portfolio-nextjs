@@ -33,7 +33,7 @@ export default function BlogPost({ post }: { post: Post }) {
 
   console.log(event.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
   return (
-    <div className="py-4">
+    <div className="py-10">
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
         <dl>
           <dt className="sr-only">Published on</dt>
