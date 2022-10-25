@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import RenderBlog from '../../components/Blog/RenderBlog';
 import Layout from '../../components/Layout/Layout';
 
+const posts = [{ title: 'Facundo Martin', excerpt: 'lalala' }];
 const Blog: NextPage = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const Blog: NextPage = () => {
         <title> About | Facundo Martin</title>
       </Head>
       <Layout>
-        <h1>Blog</h1>
+        <RenderBlog posts={posts} />
       </Layout>
     </>
   );
