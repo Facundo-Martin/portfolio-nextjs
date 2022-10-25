@@ -28,13 +28,29 @@ export type TechData = {
   url: string;
 };
 
-export type Post = {
-  title: string;
+export type Author = {
+  avatar: {
+    url: string;
+  };
+  bio: string;
+  id: string;
+  name: string;
+};
+export type Category = {
+  name: string;
   slug: string;
-  excerpt: string;
-  content: string;
-  featuredImage: any;
-  featuredPost: boolean;
-  authors: any;
-  categories: string[];
+};
+
+export type Post = {
+  node: {
+    authors: Author[];
+    categories: Category[];
+    createdAt: string;
+    title: string;
+    slug: string;
+    excerpt: string;
+    featuredImage: {
+      url: string;
+    };
+  };
 };

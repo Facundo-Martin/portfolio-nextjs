@@ -16,10 +16,10 @@ export const getPosts = async () => {
               avatar {
                 url
               }
-              createdAt
             }
+            createdAt
             slug
-            exerpt
+            excerpt
             title
             featuredImage {
               url
@@ -34,6 +34,6 @@ export const getPosts = async () => {
     }
   `;
   const result = await request(graphQLAPI, query);
-
+  console.log('HIIII', result.postsConnection.edges);
   return result.postsConnection.edges;
 };

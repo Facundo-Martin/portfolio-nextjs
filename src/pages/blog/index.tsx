@@ -6,7 +6,12 @@ import { GetStaticProps } from 'next';
 import { getPosts } from '../../services';
 import { Post } from '../../d';
 
-const Blog: NextPage = ({ posts }: { posts: Post[] }) => {
+type BlogProps = {
+  posts: Post[];
+};
+
+const Blog: NextPage<BlogProps> = ({ posts }) => {
+  console.log(getPosts());
   return (
     <>
       <Head>
@@ -22,7 +27,7 @@ const Blog: NextPage = ({ posts }: { posts: Post[] }) => {
 export default Blog;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const posts = (await getPosts()) || [];
+  const posts = await getPosts();
 
   return {
     props: { posts },
