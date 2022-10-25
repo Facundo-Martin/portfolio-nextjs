@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { stringify } from 'querystring';
 import React from 'react';
 import { Post } from '../../d';
 
@@ -19,13 +20,25 @@ function ReadMore({ slug }: { slug: string }) {
 }
 
 export default function BlogPost({ post }: { post: Post }) {
+  const date = new Date(post.node.createdAt);
+  console.log(typeof post.node.createdAt, 'hii', date, typeof date);
+  const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+  type options = {
+    weekday: string;
+    year: string;
+    month: string;
+    day: string;
+  };
+  const options: options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+  console.log(event.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
   return (
     <div className="py-4">
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
         <dl>
           <dt className="sr-only">Published on</dt>
           <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-            <time dateTime={post.node.createdAt}>{post.node.createdAt}</time>
+            <time dateTime={post.node.createdAt}>{date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
           </dd>
         </dl>
         <div className="space-y-3 xl:col-span-3">
