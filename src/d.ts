@@ -27,3 +27,14 @@ export type TechData = {
   logo: StaticImageData;
   url: string;
 };
+
+export type Post = {
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  featuredImage: any;
+  featuredPost: boolean;
+  authors: any;
+  categories: string[];
+};

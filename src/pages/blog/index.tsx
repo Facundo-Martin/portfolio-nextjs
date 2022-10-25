@@ -4,9 +4,9 @@ import RenderBlog from '../../components/Blog/RenderBlog';
 import Layout from '../../components/Layout/Layout';
 import { GetStaticProps } from 'next';
 import { getPosts } from '../../services';
+import { Post } from '../../d';
 
-const posts = [{ title: 'Facundo Martin', excerpt: 'lalala' }];
-const Blog: NextPage = () => {
+const Blog: NextPage = ({ posts }: { posts: Post[] }) => {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const posts = (await getPosts()) || [];
 
   return {
-    props: posts,
+    props: { posts },
   };
   // ...
 };
