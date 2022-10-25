@@ -20,6 +20,7 @@ function Footer() {
           <div className="flex gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-200">
             <NavLink href="/about">About</NavLink>
             <NavLink href="/projects">Projects</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
             <NavLink href="/contact">Contact</NavLink>
           </div>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
