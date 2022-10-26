@@ -1,7 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType, NextPage } from 'next';
 import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Layout from '../../components/Layout/Layout';
 import RenderProject from '../../components/Project/RenderProject';
 import { projects } from '../../utils';
@@ -28,7 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
   const project = projects.find((x) => x.slug === slug);
   return {
-    props: { project: project }, // Passed to the page component as props
+    props: { project: project },
   };
 };
 

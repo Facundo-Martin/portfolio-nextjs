@@ -7,7 +7,7 @@ import { Post } from '../../d';
 function ReadMore({ slug }: { slug: string }) {
   return (
     <div className="pt-2 w-fit">
-      <Link href={`/projects/${slug}`}>
+      <Link href={`/blog/${slug}`}>
         <a>
           <div className="flex items-center gap-x-2 text-teal-500 group">
             <h4>Read More</h4>
