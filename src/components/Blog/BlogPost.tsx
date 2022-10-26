@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 import Link from 'next/link';
 import { stringify } from 'querystring';
 import React from 'react';
@@ -21,17 +22,6 @@ function ReadMore({ slug }: { slug: string }) {
 
 export default function BlogPost({ post }: { post: Post }) {
   const date = new Date(post.node.createdAt);
-  console.log(typeof post.node.createdAt, 'hii', date, typeof date);
-  const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
-  type options = {
-    weekday: string;
-    year: string;
-    month: string;
-    day: string;
-  };
-  const options: options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
-  console.log(event.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
   return (
     <div className="py-10">
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -48,13 +38,22 @@ export default function BlogPost({ post }: { post: Post }) {
                 <h3> {post.node.title}</h3>
               </Link>
             </h3>
+
             <div className="flex flex-wrap">
               {post.node.categories.map((x) => (
                 <div>{x.name}</div>
               ))}
             </div>
           </div>
-          <div className="prose max-w-none text-gray-500 dark:text-gray-400">{post.node.excerpt}</div>
+          <div className="prose max-w-lg text-gray-600 dark:text-gray-400">{post.node.excerpt}</div>
+          <div>
+            {post.node.authors.map((author) => (
+              <div className="flex items-center gap-x-2">
+                <Image src={author.avatar.url} width={30} height={30} alt={author.name} className="rounded-full" />
+                <h4 className="text-sm text-gray-500 dark:text-slate-400">{author.name}</h4>
+              </div>
+            ))}
+          </div>
           <ReadMore slug={post.node.slug} />
         </div>
       </article>
