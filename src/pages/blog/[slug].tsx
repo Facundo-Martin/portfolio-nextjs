@@ -1,7 +1,8 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import RenderPost from '../../components/Post/RenderPost';
+import { getPosts } from '../../services';
 
 const Contact: NextPage = () => {
   return (
@@ -17,3 +18,12 @@ const Contact: NextPage = () => {
 };
 
 export default Contact;
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const posts = await getPosts();
+
+  return {
+    props: { posts },
+  };
+  // ...
+};

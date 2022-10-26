@@ -1,5 +1,12 @@
 import React from 'react';
+import Post from './Post';
+import Sidebar from './Sidebar';
 
 export default function RenderPost() {
-  return <div>RenderPost</div>;
+  return (
+    <section className="section">
+      <Sidebar />
+      <Post />
+    </section>
+  );
 }
