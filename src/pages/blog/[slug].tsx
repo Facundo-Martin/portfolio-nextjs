@@ -1,9 +1,9 @@
-import type { GetStaticProps, NextPage } from 'next';
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import RenderPost from '../../components/Post/RenderPost';
 import { Post } from '../../d';
-import { getPost } from '../../services';
+import { getPost, getPosts } from '../../services';
 
 type PostProps = {
   post: Post;
@@ -28,6 +28,18 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: { post },
+  };
+  // ...
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await getPosts();
+  const paths = posts.map((post: Post) => {
+    return post.node.slug;
+  });
+  return {
+    paths,
+    fallback: false,
   };
   // ...
 };
