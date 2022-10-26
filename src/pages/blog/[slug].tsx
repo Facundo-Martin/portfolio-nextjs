@@ -2,28 +2,32 @@ import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import RenderPost from '../../components/Post/RenderPost';
-import { getPosts } from '../../services';
+import { Post } from '../../d';
+import { getPost } from '../../services';
 
-const Contact: NextPage = () => {
+type PostProps = {
+  post: Post;
+};
+const Post: NextPage<PostProps> = ({ post }) => {
   return (
     <>
       <Head>
         <title> Contact | Facundo Martin</title>
       </Head>
       <Layout>
-        <RenderPost />
+        <RenderPost post={post} />
       </Layout>
     </>
   );
 };
 
-export default Contact;
+export default Post;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const posts = await getPosts();
+  const post = await getPost(params.slug);
 
   return {
-    props: { posts },
+    props: { post },
   };
   // ...
 };
