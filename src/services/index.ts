@@ -34,6 +34,43 @@ export const getPosts = async () => {
     }
   `;
   const result = await request(graphQLAPI, query);
-  console.log('HIIII', result.postsConnection.edges);
   return result.postsConnection.edges;
+};
+
+export const getPost = async (slug: string) => {
+  const query = gql`
+    query Post($slug: String!) {
+      post(where: { slug: $slug })
+      postsConnection {
+        edges {
+          node {
+            authors {
+              bio
+              id
+              name
+              avatar {
+                url
+              }
+            }
+            createdAt
+            slug
+            content {
+              raw
+            }
+            excerpt
+            title
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `;
+  const result = await request(graphQLAPI, query, { slug });
+  return result.post;
 };
