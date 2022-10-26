@@ -12,7 +12,7 @@ export default function RenderBlog({ posts }: { posts: Post[] }) {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illo optio veniam laborum perspiciatis deserunt dolorum sint reiciendis, omnis
           facilis.
         </p>
-        <SearchModal />
+        <SearchModal className="w-72" />
       </div>
       <ul className="mt-8 divide-y divide-gray-200 dark:divide-gray-700">
         {posts.map((post) => (
