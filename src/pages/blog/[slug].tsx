@@ -1,4 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
 import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import RenderPost from '../../components/Post/RenderPost';
@@ -22,9 +23,12 @@ const Post: NextPage<PostProps> = ({ post }) => {
 };
 
 export default Post;
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await getPost(params.slug);
+interface IParams extends NextParsedUrlQuery {
+  slug: string;
+}
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params as IParams;
+  const post = await getPost(slug);
 
   return {
     props: { post },
