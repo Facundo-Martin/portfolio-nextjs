@@ -39,7 +39,9 @@ export const getPosts = async () => {
 };
 
 export const getPost = async (slug: string) => {
+  console.log('initializing post fetch');
   const query = gql`
+  // Why is this rendered as all text instead of variables???
     query Post($slug: String!) {
       post(where: { slug: $slug })
       postsConnection {
@@ -73,5 +75,6 @@ export const getPost = async (slug: string) => {
     }
   `;
   const result = await request(graphQLAPI, query, { slug });
+  console.log('GETTING SINGLE POST', result.post);
   return result.post;
 };
