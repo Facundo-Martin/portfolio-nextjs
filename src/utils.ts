@@ -44,7 +44,7 @@ export const projects: Project[] = [
     slug: 'freact-docs',
     preview: FreactPreview,
     website: 'https://freact-docs.vercel.app/category/production-react',
-    description: 'A Fronte End + React documentation site designed to take React projects from zero to production.',
+    description: 'A Front End + React documentation site designed to take React projects from zero to production.',
     description2: 'Detailed guides on topics ranging from git hooks and  CI/CD pipelines to SEO optimization and accesibility.',
     features: ['Linter, formatter, and Git Hooks configurations', 'CI/CD pipelines with Github Actions', 'SEO Optimization & Accessibility'],
     techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Tailwind'],
