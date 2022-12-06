@@ -1,6 +1,7 @@
 import { Project, ResumeItem, TechData } from './d';
 // Project images
 import SpumePreview from './assets/SpumePreview.webp';
+import FreactPreview from './assets/FreactPreview.png';
 import RundooPreview from './assets/RundooPreview.webp';
 import CovidTrackerPreview from './assets/CovidTrackerPreview.webp';
 // Resume images
@@ -36,6 +37,16 @@ export const projects: Project[] = [
     description: 'Decentralized NFT marketplace where people can mint and trade NFTs by logging in with their MetaMask wallet.',
     description2: "Explore your favorite collections on Spume's supported chains and start trading your favorite NFTs. ",
     features: ['Smart wallet sign in and account creation', 'Endless scrolling for collection items', 'Recently added cross-chain support'],
+    techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Tailwind'],
+  },
+  {
+    name: 'Freact Docs',
+    slug: 'freact-docs',
+    preview: FreactPreview,
+    website: 'https://freact-docs.vercel.app/category/production-react',
+    description: 'A Fronte End + React documentation site designed to take React projects from zero to production.',
+    description2: 'Detailed guides on topics ranging from git hooks and  CI/CD pipelines to SEO optimization and accesibility.',
+    features: ['Linter, formatter, and Git Hooks configurations', 'CI/CD pipelines with Github Actions', 'SEO Optimization & Accessibility'],
     techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Tailwind'],
   },
   {
